@@ -1,0 +1,26 @@
+{
+  "name": "azixo-token-sale",
+  "version": "1.0.0",
+  "description": "Asixo coin token sale ICO",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tayyib-A60/TSquareToken.git"
+  },
+  "author": "Adesokan Toyeeb (adesokantayyib@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Tayyib-A60/TSquareToken/issues"
+  },
+  "homepage": "https://github.com/Tayyib-A60/TSquareToken#readme"
+}
