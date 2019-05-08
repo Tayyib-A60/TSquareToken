@@ -106,15 +106,15 @@
       "signature": "0x380d831b"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokensSold\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_tokenContract\",\"type\":\"address\"},{\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"_buyer\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"Sell\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/User/Desktop/token_sale/contracts/AsixoTokenSale.sol\":\"AsixoTokenSale\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/User/Desktop/token_sale/contracts/AsixoTokenSale.sol\":{\"keccak256\":\"0x98707e0df7d5ac5fbb4cc9250ff20bb177aaaaf3652de3cf1b884e7b83f17154\",\"urls\":[\"bzzr://ec34d833bbee00d4e8fbcbe10c2d0667825e2d86682e0d59e2c1ef04f34006ec\"]},\"/C/Users/User/Desktop/token_sale/contracts/TSquareToken.sol\":{\"keccak256\":\"0xce653e1b0bc5f62529481f06870380bf57b10cec42a2468b9734ab8824024c89\",\"urls\":[\"bzzr://a335b30048d43f5349d72463f254eab786ac18611bf12db4438d2244a7dc27a8\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516040806108798339810180604052604081101561003057600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002819055505050610795806100e46000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633610724e14610072578063380d831b146100a0578063518ab2a8146100b757806355a373d6146100e25780637ff9b59614610139575b600080fd5b61009e6004803603602081101561008857600080fd5b8101908080359060200190929190505050610164565b005b3480156100ac57600080fd5b506100b561040a565b005b3480156100c357600080fd5b506100cc610707565b6040518082815260200191505060405180910390f35b3480156100ee57600080fd5b506100f761070d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014557600080fd5b5061014e610733565b6040518082815260200191505060405180910390f35b61017081600254610739565b3414151561017d57600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561023957600080fd5b505afa15801561024d573d6000803e3d6000fd5b505050506040513d602081101561026357600080fd5b81019080805190602001909291905050501015151561028157600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561034657600080fd5b505af115801561035a573d6000803e3d6000fd5b505050506040513d602081101561037057600080fd5b8101908080519060200190929190505050151561038c57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561046557600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561058057600080fd5b505afa158015610594573d6000803e3d6000fd5b505050506040513d60208110156105aa57600080fd5b81019080805190602001909291905050506040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561064057600080fd5b505af1158015610654573d6000803e3d6000fd5b505050506040513d602081101561066a57600080fd5b8101908080519060200190929190505050151561068657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610704573d6000803e3d6000fd5b50565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b6000808214806107585750828283850292508281151561075557fe5b04145b151561076357600080fd5b9291505056fea165627a7a72305820292639da62156c097bc6319b3991a798e4220bb68f7a28b1f97fa6668e6c52460029",
-  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633610724e14610072578063380d831b146100a0578063518ab2a8146100b757806355a373d6146100e25780637ff9b59614610139575b600080fd5b61009e6004803603602081101561008857600080fd5b8101908080359060200190929190505050610164565b005b3480156100ac57600080fd5b506100b561040a565b005b3480156100c357600080fd5b506100cc610707565b6040518082815260200191505060405180910390f35b3480156100ee57600080fd5b506100f761070d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014557600080fd5b5061014e610733565b6040518082815260200191505060405180910390f35b61017081600254610739565b3414151561017d57600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561023957600080fd5b505afa15801561024d573d6000803e3d6000fd5b505050506040513d602081101561026357600080fd5b81019080805190602001909291905050501015151561028157600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561034657600080fd5b505af115801561035a573d6000803e3d6000fd5b505050506040513d602081101561037057600080fd5b8101908080519060200190929190505050151561038c57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561046557600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561058057600080fd5b505afa158015610594573d6000803e3d6000fd5b505050506040513d60208110156105aa57600080fd5b81019080805190602001909291905050506040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561064057600080fd5b505af1158015610654573d6000803e3d6000fd5b505050506040513d602081101561066a57600080fd5b8101908080519060200190929190505050151561068657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610704573d6000803e3d6000fd5b50565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b6000808214806107585750828283850292508281151561075557fe5b04145b151561076357600080fd5b9291505056fea165627a7a72305820292639da62156c097bc6319b3991a798e4220bb68f7a28b1f97fa6668e6c52460029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokensSold\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_tokenContract\",\"type\":\"address\"},{\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"_buyer\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"Sell\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/User/Desktop/pet-shop-box/contracts/AsixoTokenSale.sol\":\"AsixoTokenSale\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/User/Desktop/pet-shop-box/contracts/AsixoTokenSale.sol\":{\"keccak256\":\"0x98707e0df7d5ac5fbb4cc9250ff20bb177aaaaf3652de3cf1b884e7b83f17154\",\"urls\":[\"bzzr://ec34d833bbee00d4e8fbcbe10c2d0667825e2d86682e0d59e2c1ef04f34006ec\"]},\"/C/Users/User/Desktop/pet-shop-box/contracts/TSquareToken.sol\":{\"keccak256\":\"0xce653e1b0bc5f62529481f06870380bf57b10cec42a2468b9734ab8824024c89\",\"urls\":[\"bzzr://a335b30048d43f5349d72463f254eab786ac18611bf12db4438d2244a7dc27a8\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806108798339810180604052604081101561003057600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002819055505050610795806100e46000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633610724e14610072578063380d831b146100a0578063518ab2a8146100b757806355a373d6146100e25780637ff9b59614610139575b600080fd5b61009e6004803603602081101561008857600080fd5b8101908080359060200190929190505050610164565b005b3480156100ac57600080fd5b506100b561040a565b005b3480156100c357600080fd5b506100cc610707565b6040518082815260200191505060405180910390f35b3480156100ee57600080fd5b506100f761070d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014557600080fd5b5061014e610733565b6040518082815260200191505060405180910390f35b61017081600254610739565b3414151561017d57600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561023957600080fd5b505afa15801561024d573d6000803e3d6000fd5b505050506040513d602081101561026357600080fd5b81019080805190602001909291905050501015151561028157600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561034657600080fd5b505af115801561035a573d6000803e3d6000fd5b505050506040513d602081101561037057600080fd5b8101908080519060200190929190505050151561038c57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561046557600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561058057600080fd5b505afa158015610594573d6000803e3d6000fd5b505050506040513d60208110156105aa57600080fd5b81019080805190602001909291905050506040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561064057600080fd5b505af1158015610654573d6000803e3d6000fd5b505050506040513d602081101561066a57600080fd5b8101908080519060200190929190505050151561068657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610704573d6000803e3d6000fd5b50565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b6000808214806107585750828283850292508281151561075557fe5b04145b151561076357600080fd5b9291505056fea165627a7a72305820ef0523d6f077bdb6ad95304891e5dc2a7f735aff8b19822dc38cd0c5755418000029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633610724e14610072578063380d831b146100a0578063518ab2a8146100b757806355a373d6146100e25780637ff9b59614610139575b600080fd5b61009e6004803603602081101561008857600080fd5b8101908080359060200190929190505050610164565b005b3480156100ac57600080fd5b506100b561040a565b005b3480156100c357600080fd5b506100cc610707565b6040518082815260200191505060405180910390f35b3480156100ee57600080fd5b506100f761070d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014557600080fd5b5061014e610733565b6040518082815260200191505060405180910390f35b61017081600254610739565b3414151561017d57600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561023957600080fd5b505afa15801561024d573d6000803e3d6000fd5b505050506040513d602081101561026357600080fd5b81019080805190602001909291905050501015151561028157600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561034657600080fd5b505af115801561035a573d6000803e3d6000fd5b505050506040513d602081101561037057600080fd5b8101908080519060200190929190505050151561038c57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561046557600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561058057600080fd5b505afa158015610594573d6000803e3d6000fd5b505050506040513d60208110156105aa57600080fd5b81019080805190602001909291905050506040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561064057600080fd5b505af1158015610654573d6000803e3d6000fd5b505050506040513d602081101561066a57600080fd5b8101908080519060200190929190505050151561068657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610704573d6000803e3d6000fd5b50565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b6000808214806107585750828283850292508281151561075557fe5b04145b151561076357600080fd5b9291505056fea165627a7a72305820ef0523d6f077bdb6ad95304891e5dc2a7f735aff8b19822dc38cd0c5755418000029",
   "sourceMap": "59:1133:0:-;;;274:182;8:9:-1;5:2;;;30:1;27;20:12;5:2;274:182:0;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;274:182:0;;;;;;;;;;;;;;;;;;;;;;;;;362:10;354:5;;:18;;;;;;;;;;;;;;;;;;399:14;383:13;;:30;;;;;;;;;;;;;;;;;;437:11;424:10;:24;;;;274:182;;59:1133;;;;;;",
   "deployedSourceMap": "59:1133:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;593:378;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;593:378:0;;;;;;;;;;;;;;;;;;;;979:210;;8:9:-1;5:2;;;30:1;27;20:12;5:2;979:210:0;;;;;;190:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;190:25:0;;;;;;;;;;;;;;;;;;;;;;;118:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;118:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;158:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;158:25:0;;;;;;;;;;;;;;;;;;;;;;;593:378;684:37;693:15;710:10;;684:8;:37::i;:::-;671:9;:50;663:59;;;;;;;;783:15;741:13;;;;;;;;;;;:23;;;773:4;741:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;741:38:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;741:38:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;741:38:0;;;;;;;;;;;;;;;;:57;;733:66;;;;;;;;818:13;;;;;;;;;;;:22;;;841:10;853:15;818:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;818:51:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;818:51:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;818:51:0;;;;;;;;;;;;;;;;810:60;;;;;;;;897:15;883:10;;:29;;;;;;;;;;;930:33;935:10;947:15;930:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;593:378;:::o;979:210::-;1038:5;;;;;;;;;;;1024:19;;:10;:19;;;1016:28;;;;;;;;1063:13;;;;;;;;;;;:22;;;1086:5;;;;;;;;;;;1093:13;;;;;;;;;;;:23;;;1125:4;1093:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1093:38:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1093:38:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1093:38:0;;;;;;;;;;;;;;;;1063:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1063:69:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1063:69:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1063:69:0;;;;;;;;;;;;;;;;1055:78;;;;;;;;1144:5;;;;;;;;;;;:14;;:37;1167:4;1159:21;;;1144:37;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1144:37:0;979:210::o;190:25::-;;;;:::o;118:33::-;;;;;;;;;;;;;:::o;158:25::-;;;;:::o;462:123::-;519:6;551:1;546;:6;:30;;;;575:1;570;565;561;:5;557:9;;;556:15;;;;;;;;:20;546:30;538:39;;;;;;;;462:123;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\nimport './TSquareToken.sol';\r\n\r\ncontract AsixoTokenSale {\r\n    address payable admin;\r\n    TSquareToken public tokenContract;\r\n    uint256 public tokenPrice;\r\n    uint256 public tokensSold;\r\n    event Sell(address _buyer, uint256 _amount);\r\n\r\n    constructor(TSquareToken _tokenContract, uint256 _tokenPrice) public {\r\n        admin = msg.sender;\r\n        tokenContract = _tokenContract;\r\n        tokenPrice = _tokenPrice;\r\n    }\r\n    function multiply(uint x, uint y) internal pure returns (uint z) {\r\n        require(y == 0 || (z = x * y) / y == x);\r\n    }\r\n\r\n    function buyTokens(uint256 _numberOfTokens) public payable {\r\n        require(msg.value == multiply(_numberOfTokens, tokenPrice));\r\n        require(tokenContract.balanceOf(address(this)) >= _numberOfTokens);\r\n        require(tokenContract.transfer(msg.sender, _numberOfTokens));\r\n\r\n        tokensSold += _numberOfTokens;\r\n\r\n        emit Sell(msg.sender, _numberOfTokens);\r\n    }\r\n\r\n    function endSale() public {\r\n        require(msg.sender == admin);\r\n        require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))));\r\n        admin.transfer(address(this).balance);\r\n    }\r\n}",
-  "sourcePath": "C:/Users/User/Desktop/token_sale/contracts/AsixoTokenSale.sol",
+  "sourcePath": "C:/Users/User/Desktop/pet-shop-box/contracts/AsixoTokenSale.sol",
   "ast": {
-    "absolutePath": "/C/Users/User/Desktop/token_sale/contracts/AsixoTokenSale.sol",
+    "absolutePath": "/C/Users/User/Desktop/pet-shop-box/contracts/AsixoTokenSale.sol",
     "exportedSymbols": {
       "AsixoTokenSale": [
         144
@@ -135,7 +135,7 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/C/Users/User/Desktop/token_sale/contracts/TSquareToken.sol",
+        "absolutePath": "/C/Users/User/Desktop/pet-shop-box/contracts/TSquareToken.sol",
         "file": "./TSquareToken.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -372,7 +372,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 588,
+                        "referencedDeclaration": 402,
                         "src": "362:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -822,10 +822,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "538:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -986,7 +986,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 588,
+                            "referencedDeclaration": 402,
                             "src": "671:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1093,10 +1093,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "663:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1148,7 +1148,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 603,
+                                  "referencedDeclaration": 417,
                                   "src": "773:4:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -1272,10 +1272,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "733:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1315,7 +1315,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 588,
+                              "referencedDeclaration": 402,
                               "src": "841:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1414,10 +1414,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "810:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1500,7 +1500,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 588,
+                          "referencedDeclaration": 402,
                           "src": "935:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1658,7 +1658,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 588,
+                            "referencedDeclaration": 402,
                             "src": "1024:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1712,10 +1712,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "1016:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1772,7 +1772,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 603,
+                                    "referencedDeclaration": 417,
                                     "src": "1125:4:0",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -1928,10 +1928,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "1055:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1971,7 +1971,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 603,
+                              "referencedDeclaration": 417,
                               "src": "1167:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -2115,7 +2115,7 @@
     "src": "0:1192:0"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/User/Desktop/token_sale/contracts/AsixoTokenSale.sol",
+    "absolutePath": "/C/Users/User/Desktop/pet-shop-box/contracts/AsixoTokenSale.sol",
     "exportedSymbols": {
       "AsixoTokenSale": [
         144
@@ -2136,7 +2136,7 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/C/Users/User/Desktop/token_sale/contracts/TSquareToken.sol",
+        "absolutePath": "/C/Users/User/Desktop/pet-shop-box/contracts/TSquareToken.sol",
         "file": "./TSquareToken.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -2373,7 +2373,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 588,
+                        "referencedDeclaration": 402,
                         "src": "362:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2823,10 +2823,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "538:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2987,7 +2987,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 588,
+                            "referencedDeclaration": 402,
                             "src": "671:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3094,10 +3094,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "663:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3149,7 +3149,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 603,
+                                  "referencedDeclaration": 417,
                                   "src": "773:4:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -3273,10 +3273,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "733:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3316,7 +3316,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 588,
+                              "referencedDeclaration": 402,
                               "src": "841:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -3415,10 +3415,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "810:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3501,7 +3501,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 588,
+                          "referencedDeclaration": 402,
                           "src": "935:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3659,7 +3659,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 588,
+                            "referencedDeclaration": 402,
                             "src": "1024:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3713,10 +3713,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "1016:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3773,7 +3773,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 603,
+                                    "referencedDeclaration": 417,
                                     "src": "1125:4:0",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -3929,10 +3929,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        591,
-                        592
+                        405,
+                        406
                       ],
-                      "referencedDeclaration": 591,
+                      "referencedDeclaration": 405,
                       "src": "1055:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3972,7 +3972,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 603,
+                              "referencedDeclaration": 417,
                               "src": "1167:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_AsixoTokenSale_$144",
@@ -4120,15 +4120,15 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
-    "5777": {
+    "4": {
       "events": {},
       "links": {},
-      "address": "0xB55Da0F7e5a00300d262090a9b79897289A29951",
-      "transactionHash": "0x2f9d1157a116eb6a39b53207e530adc9d2d886ab529bc1ca85a80943d7f1ea7f"
+      "address": "0x4685F88C0D4699CeD824ad3171472F9B94D8409C",
+      "transactionHash": "0xed856358f27129b4742c0b7aa3cc643bba0452d57fbde97f4fdd23fda0f11247"
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-03T19:08:17.491Z",
+  "updatedAt": "2019-05-06T00:49:10.026Z",
   "devdoc": {
     "methods": {}
   },

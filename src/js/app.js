@@ -3,12 +3,15 @@ App = {
     contracts: {},
     account: '0x0',
     loading: false,
-    tokenPrice: 1000000000000000,
+    tokenPrice: 0,
     tokensSold: 0,
-    tokensAvailable: 750000,
+    tokensAvailable: 10000000,
+    tokenAddress: '0x1058f6710cdA7a34411263261FB032c57fCB6766',
+    tokenSaleAddress: '0x4685F88C0D4699CeD824ad3171472F9B94D8409C',
+    balance: 0,
   
     init: function() {
-      console.log("App initialized...")
+      console.log("App initialized...");
       return App.initWeb3();
     },
   
@@ -26,35 +29,34 @@ App = {
     },
   
     initContracts: function() {
-      $.getJSON("AsixoTokenSale.json", function(dappTokenSale) {
-        App.contracts.DappTokenSale = TruffleContract(dappTokenSale);
-        App.contracts.DappTokenSale.setProvider(App.web3Provider);
-        App.contracts.DappTokenSale.deployed().then(function(dappTokenSale) {
-        //   console.log("Dapp Token Sale Address:", dappTokenSale.address);
+      $.getJSON("AsixoTokenSale.json", function(asixoTokenSale) {
+        App.contracts.AsixoTokenSale = TruffleContract(asixoTokenSale);
+        App.contracts.AsixoTokenSale.setProvider(App.web3Provider);
+        App.contracts.AsixoTokenSale.deployed().then(function(asixoTokenSale) {
+        //   console.log("Dapp Token Sale Address:", asixoTokenSale.address);
         });
       }).done(function() {
-        $.getJSON("TSquareToken.json", function(dappToken) {
-          App.contracts.DappToken = TruffleContract(dappToken);
-          App.contracts.DappToken.setProvider(App.web3Provider);
-          App.contracts.DappToken.deployed().then(function(dappToken) {
-            // console.log("Dapp Token Address:", dappToken.address);
+        $.getJSON("TSquareToken.json", function(tSquareToken) {
+          App.contracts.TSquareToken = TruffleContract(tSquareToken);
+          App.contracts.TSquareToken.setProvider(App.web3Provider);
+          App.contracts.TSquareToken.deployed().then(function(tSquareToken) {
+            // console.log("Dapp Token Address:", tSquareToken.address);
           });
   
           App.listenForEvents();
-          return App.render();
+            return App.render();
         });
       })
     },
   
     // Listen for events emitted from the contract
     listenForEvents: function() {
-      App.contracts.DappTokenSale.deployed().then(function(instance) {
+      App.contracts.AsixoTokenSale.deployed().then(function(instance) {
         instance.Sell({}, {
           fromBlock: 0,
           toBlock: 'latest',
         }).watch(function(error, event) {
           console.log("event triggered", event);
-          App.render();
         })
       })
     },
@@ -70,7 +72,7 @@ App = {
   
       loader.show();
       content.hide();
-  
+      
       // Load account data
       web3.eth.getCoinbase(function(err, account) {
         if(err === null) {
@@ -78,51 +80,73 @@ App = {
           $('#accountAddress').html("Your Account: " + account);
         }
       })
-  
+      web3.eth.getBalance('0x025eaf226afbb7d4197bf7c2b793e814ac5fe26e', function(err, bal) {
+        App.balance = bal.toNumber();
+      });
       // Load token sale contract
-      App.contracts.DappTokenSale.deployed().then(function(instance) {
-        dappTokenSaleInstance = instance;
-        return dappTokenSaleInstance.tokenPrice();
+      App.contracts.AsixoTokenSale.deployed().then(function(instance) {
+        asixoTokenSaleInstance = instance;
+        return asixoTokenSaleInstance.tokenPrice();
       }).then(function(tokenPrice) {
         App.tokenPrice = tokenPrice;
         $('.token-price').html(web3.fromWei(App.tokenPrice, "ether").toNumber());
-        return dappTokenSaleInstance.tokensSold();
-      }).then(function(tokensSold) {
-        App.tokensSold = tokensSold.toNumber();
-        $('.tokens-sold').html(App.tokensSold);
-        $('.tokens-available').html(App.tokensAvailable);
+          return asixoTokenSaleInstance.tokensSold();
+        }).then(function(tokensSold) {
+          App.tokensSold = tokensSold.toNumber();
+          $('.tokens-sold').html(App.tokensSold);
+          $('.tokens-available').html(web3.fromWei(App.tokensAvailable));
   
         var progressPercent = (Math.ceil(App.tokensSold) / App.tokensAvailable) * 100;
+        
         $('#progress').css('width', progressPercent + '%');
-  
+
         // Load token contract
-        App.contracts.DappToken.deployed().then(function(instance) {
-          dappTokenInstance = instance;
-          return dappTokenInstance.balanceOf(App.account);
+        App.contracts.TSquareToken.deployed().then(function(instance) {
+          tSquareTokenInstance = instance;
+          return tSquareTokenInstance.balanceOf(App.account);
         }).then(function(balance) {
           $('.token-balance').html(balance.toNumber());
           App.loading = false;
           loader.hide();
           content.show();
+          return tSquareTokenInstance.balanceOf(App.tokenSaleAddress);
+        }).then((tokensAvailable) => {
+          // App.tokensAvailable = tokensAvailable;
+          $('.tokens-sold').html(App.tokensSold);
+          $('.tokens-available').html(App.tokensAvailable);
         })
       });
+      // App.tranferTokensToTokenSale();
     },
-  
+
     buyTokens: function() {
       $('#content').hide();
       $('#loader').show();
       var numberOfTokens = $('#numberOfTokens').val();
-      App.contracts.DappTokenSale.deployed().then(function(instance) {
+      App.contracts.AsixoTokenSale.deployed().then(function(instance) {
         return instance.buyTokens(numberOfTokens, {
           from: App.account,
           value: numberOfTokens * App.tokenPrice,
-          gas: 500000 // Gas limit
+          gas: 500000 // Gas limit 
         });
       }).then(function(result) {
         console.log("Tokens bought...")
         $('form').trigger('reset') // reset number of tokens in form
         // Wait for Sell event
       });
+    },
+    tranferTokensToTokenSale: function() {
+      // web3.eth.contract(abi)
+      App.contracts.TSquareToken.deployed().then(function(instance) {
+        instance.totalSupply().then((supply) => {
+          console.log(supply);
+          
+        });
+        
+        // return instance.transfer(App.tokenSaleAddress, 10000000, {
+        //   from: App.account
+        // });
+      })
     }
   }
   

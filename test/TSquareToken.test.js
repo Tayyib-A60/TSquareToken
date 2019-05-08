@@ -36,7 +36,7 @@ contract('TSquareToken', function(accounts) {
         assert(error.message.indexOf('revert') >= 0, 'error message contains revert');
         return tokenInstance.transfer.call(accounts[1], 25000, {from: accounts[0]});
     }).then(function(success) {
-        assert.equal(success, true, 'it returns true')
+        assert.equal(success, true, 'it returns true');
         return tokenInstance.transfer(accounts[1], 25000, {from: accounts[0]});
     }).then(function(reciept) {
         assert.equal(reciept.logs.length, 1);

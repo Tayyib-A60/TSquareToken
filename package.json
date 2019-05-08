@@ -17,7 +17,15 @@
   "author": "Adesokan Toyeeb (adesokantayyib@gmail.com)",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "truffle-hdwallet-provider": "0.0.3",
+    "ganache-cli": "^6.4.2",
+    "solc": "^0.4.25",
+    "web3": "^1.0.0-beta.37"
+  },
+  "dependencies": {
+    "web3": "^1.0.0-beta.37",
+    "ganache-cli": "^6.4.2"
   },
   "bugs": {
     "url": "https://github.com/Tayyib-A60/TSquareToken/issues"
